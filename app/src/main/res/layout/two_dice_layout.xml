@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/streetfighterlogoimage"
+        android:scaleType="fitCenter"
+         />
+
+    <ImageView
+        android:id="@+id/diceOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/purplebigfist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/diceTwo"
+        app:layout_constraintTop_toTopOf="@id/diceTwo"
+        />
+
+    <ImageView
+        android:id="@+id/diceTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/purplebigshield"
+        app:layout_constraintBottom_toTopOf="@id/superButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/diceThree"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/purpledoublefist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/diceTwo"
+        app:layout_constraintStart_toEndOf="@id/diceTwo"
+
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/diceFour"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/purpleenergy"
+        app:layout_constraintEnd_toStartOf="@id/diceFive"
+        app:layout_constraintTop_toTopOf="@id/diceFive"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/diceFive"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/purpleshieldfist"
+        app:layout_constraintTop_toBottomOf="@id/superButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/diceSix"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/purpleshieldfist"
+        app:layout_constraintStart_toEndOf="@id/diceFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/diceFive"
+        />
+
+    <Button
+
+        android:id="@+id/superButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="Fight!"
+        android:textColor="#E53935"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
