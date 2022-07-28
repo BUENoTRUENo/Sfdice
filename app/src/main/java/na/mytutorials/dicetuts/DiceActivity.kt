@@ -32,7 +32,7 @@ class DiceActivity : AppCompatActivity() {
     )
 
     val critPhysicalWorthy = listOf(0, 2, 4, 5)
-    val critManaWorthy = listOf(3, 3, 3)
+    val critManaWorthy = listOf(3)
 
     lateinit var rollingOne: ImageView
     lateinit var rollingTwo: ImageView
@@ -266,7 +266,7 @@ class DiceActivity : AppCompatActivity() {
         Toast.makeText(this, "Player $player Just Critted Bitch", Toast.LENGTH_SHORT).show()
     }
 
-    private fun showManaCritStuff() {
+    private fun showManaCritStuff(playertwo: Int) {
         Toast.makeText(this, "Energy!", Toast.LENGTH_SHORT).show()
     }
 

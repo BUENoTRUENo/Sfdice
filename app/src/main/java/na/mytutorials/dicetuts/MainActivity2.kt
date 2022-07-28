@@ -3,6 +3,7 @@ package na.mytutorials.dicetuts
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.system.Os.kill
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -12,10 +13,12 @@ import androidx.core.widget.addTextChangedListener
 
 class MainActivity2 : AppCompatActivity() {
     var ourDice = 0
+  var count = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
+        lateinit var timer: CountDownTimer
 
         val moveButton = findViewById<Button>(R.id.makeMove)
         var textOne = findViewById<TextView>(R.id.timeTV)
@@ -36,19 +39,33 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         moveButton.setOnClickListener {
+            number = 61
 
-            val timer = object : CountDownTimer(31000, 1000) {
+            if (count > 0) {
+                timer.cancel()
+            } else {
+                count += 1
+            }
+
+            timer = object : CountDownTimer(61000, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
-                    number -= 1
-                    textOne.text = "$number"
+                    if (number > 0) {
+                        number -= 1
+
+                        textOne.text = "$number"
+                    }
                 }
 
                 override fun onFinish() {
 
                     print(2)
+                        cancel()
+                    number = 61
                 }
 
             }
+
+
             timer.start()
         }
     }
