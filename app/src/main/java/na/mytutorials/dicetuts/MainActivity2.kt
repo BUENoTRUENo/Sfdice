@@ -37,6 +37,7 @@ class MainActivity2 : AppCompatActivity() {
         nextMoveButton.setOnClickListener {
             DiceActivity.startDiceActivity(ourDice, this@MainActivity2)
         }
+        // some more new stuff
 
         moveButton.setOnClickListener {
             number = 61

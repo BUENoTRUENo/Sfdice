@@ -54,6 +54,10 @@ class DiceActivity : AppCompatActivity() {
         rollingFive = findViewById(R.id.diceFive)
         rollingSix = findViewById(R.id.diceSix)
 
+        //New stuff here
+
+        // some more new stufff
+
         byuton.setOnClickListener {
 
             val timer = object : CountDownTimer(1000, 200) {
