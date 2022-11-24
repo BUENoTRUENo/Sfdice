@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SelectGameModeRemakeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2"
+        android:id="@+id/top_guide"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8"
+        android:id="@+id/bot_guide"
+        />
+
+    <ImageView
+        android:id="@+id/main_logo_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/med_spacing"
+        android:layout_marginEnd="@dimen/med_spacing"
+        android:background="@drawable/rebigbrella"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/bot_guide"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_guide"
+         />
+
+    <ImageButton
+        android:id="@+id/resident_evil_umbrella_imageview"
+        android:layout_width="133dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/rebigbrella"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/selectortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Game"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/med_spacing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <Switch
+        android:id="@+id/select_game_type_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2.1"
+        android:scaleY="2.1"
+        app:layout_constraintTop_toBottomOf="@id/bot_guide"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
