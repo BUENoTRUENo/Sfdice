@@ -54,6 +54,10 @@ class DiceActivity : AppCompatActivity() {
         rollingFive = findViewById(R.id.diceFive)
         rollingSix = findViewById(R.id.diceSix)
 
+        //New stuff here
+
+        // some more new stufff
+
         byuton.setOnClickListener {
 
             val timer = object : CountDownTimer(1000, 200) {
@@ -263,11 +267,11 @@ class DiceActivity : AppCompatActivity() {
     }
 
     private fun showCritStuff(player: Int) {
-        Toast.makeText(this, "Player $player Just Critted Bitch", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Player $player CRITICAL DAMGE", Toast.LENGTH_SHORT).show()
     }
 
     private fun showManaCritStuff(playertwo: Int) {
-        Toast.makeText(this, "Energy!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "High Energy!", Toast.LENGTH_SHORT).show()
     }
 
     companion object {

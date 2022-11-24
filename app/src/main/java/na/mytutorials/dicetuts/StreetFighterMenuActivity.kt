@@ -1,31 +1,38 @@
 package na.mytutorials.dicetuts
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.system.Os.kill
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
+import na.mytutorials.dicetuts.databinding.ActivityStreetFighterMenuBinding
 
-class MainActivity2 : AppCompatActivity() {
+class StreetFighterMenuActivity : AppCompatActivity() {
+
+    companion object {
+        fun startStreetFighterMenuActivity(context: Context) {
+            val intent = Intent(context, StreetFighterMenuActivity::class.java)
+            context.startActivity(intent)
+        }
+    }
+
     var ourDice = 0
-  var count = 0
+    var count = 0
+    val binding by lazy { ActivityStreetFighterMenuBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(binding.root)
 
         lateinit var timer: CountDownTimer
 
-        val moveButton = findViewById<Button>(R.id.makeMove)
-        var textOne = findViewById<TextView>(R.id.timeTV)
         var number = 31
-        val numberOfDiceText = findViewById<EditText>(R.id.dice_edit_text)
 
-        numberOfDiceText.addTextChangedListener {
+
+        binding.diceEditTextview.addTextChangedListener {
             val somthing = it.toString()
             if (somthing.length > 0) {
                 ourDice = if (somthing.toInt() < 7) somthing.toInt() else 6
@@ -33,12 +40,12 @@ class MainActivity2 : AppCompatActivity() {
             Log.d("miko", "it is $somthing")
             Log.d("miko", "size ${somthing.length}")
         }
-        val nextMoveButton = findViewById<Button>(R.id.next_move)
-        nextMoveButton.setOnClickListener {
-            DiceActivity.startDiceActivity(ourDice, this@MainActivity2)
+        binding.nextMoveButton.setOnClickListener {
+            DiceActivity.startDiceActivity(ourDice, this@StreetFighterMenuActivity)
         }
+        // some more new stuff
 
-        moveButton.setOnClickListener {
+        binding.moveButton.setOnClickListener {
             number = 61
 
             if (count > 0) {
@@ -52,14 +59,14 @@ class MainActivity2 : AppCompatActivity() {
                     if (number > 0) {
                         number -= 1
 
-                        textOne.text = "$number"
+                        binding.timeTextview.text = "$number"
                     }
                 }
 
                 override fun onFinish() {
 
                     print(2)
-                        cancel()
+                    cancel()
                     number = 61
                 }
 

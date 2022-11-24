@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".StreetFighterMenuActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
 
 
     <TextView
-        android:id="@+id/timeTV"
+        android:id="@+id/time_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|center_vertical"
@@ -24,7 +24,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/makeMove"/>
+        app:layout_constraintBottom_toTopOf="@id/move_button"/>
 
     <TextView
         android:id="@+id/combo_con"
@@ -42,7 +42,7 @@
 
     <EditText
 
-        android:id="@+id/dice_edit_text"
+        android:id="@+id/dice_edit_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -55,7 +55,7 @@
         />
 
     <Button
-        android:id="@+id/makeMove"
+        android:id="@+id/move_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -66,13 +66,13 @@
         android:textSize="24sp"
         app:icon="@drawable/ic_baseline_play_arrow_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/next_move"
+        app:layout_constraintEnd_toStartOf="@id/next_move_button"
         app:layout_constraintStart_toStartOf="parent"
 
         />
 
     <Button
-        android:id="@+id/next_move"
+        android:id="@+id/next_move_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -84,7 +84,7 @@
         app:icon="@drawable/ic_baseline_navigate_next_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/makeMove"
+        app:layout_constraintStart_toEndOf="@id/move_button"
         />
 
 
