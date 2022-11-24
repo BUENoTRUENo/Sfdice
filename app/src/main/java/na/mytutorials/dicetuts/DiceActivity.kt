@@ -42,6 +42,7 @@ class DiceActivity : AppCompatActivity() {
     lateinit var rollingSix: ImageView
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(setCorrectScreen(intent))
