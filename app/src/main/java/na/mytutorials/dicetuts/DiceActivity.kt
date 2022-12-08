@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 class DiceActivity : AppCompatActivity() {
 
+    //Need to add 2 more dice 6 of 8
+    //
+
 
     var numberOfDice=0
     var d1 = -1
@@ -20,6 +23,8 @@ class DiceActivity : AppCompatActivity() {
     var d4 = -1
     var d5 = -1
     var d6 = -1
+    //var d7 = -1
+    //var d8 = -1
     private val minForCrit = 4
 
     private val dieCards = listOf(
