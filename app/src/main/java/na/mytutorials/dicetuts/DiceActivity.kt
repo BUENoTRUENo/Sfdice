@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 class DiceActivity : AppCompatActivity() {
 
     //Need to add 2 more dice 6 of 8
+
     //
 
 
