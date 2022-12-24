@@ -1,4 +1,4 @@
-package na.mytutorials.dicetuts
+package na.mytutorials.dicetuts.residentevil
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,7 @@ class ResidentEvilEnterRoomActivity : AppCompatActivity() {
 
     companion object {
         fun startResidentEvilEnterRoomActivity(context: Context){
-            val intent = Intent(context,ResidentEvilEnterRoomActivity::class.java)
+            val intent = Intent(context, ResidentEvilEnterRoomActivity::class.java)
             context.startActivity(intent)
         }
     }

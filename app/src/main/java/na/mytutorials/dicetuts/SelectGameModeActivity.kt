@@ -1,6 +1,5 @@
 package na.mytutorials.dicetuts
 
-import android.content.ClipData.newIntent
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +8,8 @@ import android.widget.ImageButton
 import android.widget.Switch
 import android.widget.Toast
 import na.mytutorials.dicetuts.databinding.ActivitySelectGameModeBinding
+import na.mytutorials.dicetuts.residentevil.ResidentEvilMenuActivity
+import na.mytutorials.dicetuts.streetfighter.StreetFighterMenuActivity
 
 
 class SelectGameModeActivity : AppCompatActivity() {

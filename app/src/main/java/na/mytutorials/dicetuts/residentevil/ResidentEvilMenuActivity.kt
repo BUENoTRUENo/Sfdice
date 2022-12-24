@@ -1,13 +1,10 @@
-package na.mytutorials.dicetuts
+package na.mytutorials.dicetuts.residentevil
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
-import na.mytutorials.dicetuts.ResidentEvilMenuActivity.Companion.startResidentEvilMenuActivity
 import na.mytutorials.dicetuts.databinding.ActivityResidentEvilMenuBinding
-import na.mytutorials.dicetuts.databinding.ActivityResidentEvilShootingDiceBinding
 
 class ResidentEvilMenuActivity : AppCompatActivity() {
     //1. Finish the UI to have 3 different options Dodge, Attack, Enter Room. Done

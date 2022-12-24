@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResidentEvilDodgeMenuActivity">
+    tools:context=".residentevil.ResidentEvilDodgeMenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

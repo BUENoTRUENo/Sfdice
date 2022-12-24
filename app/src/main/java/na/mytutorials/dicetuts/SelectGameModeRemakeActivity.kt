@@ -3,6 +3,8 @@ package na.mytutorials.dicetuts
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import na.mytutorials.dicetuts.databinding.ActivitySelectGameModeRemakeBinding
+import na.mytutorials.dicetuts.residentevil.ResidentEvilMenuActivity
+import na.mytutorials.dicetuts.streetfighter.StreetFighterMenuActivity
 
 const val SF_LOGO = R.drawable.sflogosf
 const val RESIDENTEVIL_LOGO = R.drawable.rebigbrella

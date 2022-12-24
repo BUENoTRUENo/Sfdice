@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResidentEvilMenuActivity">
+    tools:context=".residentevil.ResidentEvilMenuActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -53,7 +53,7 @@
         android:layout_height="106dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="350dp"
-        android:background="@drawable/residentevilogjilldodgevector"
+        android:background="@drawable/resident_evil_shooting_jill"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"

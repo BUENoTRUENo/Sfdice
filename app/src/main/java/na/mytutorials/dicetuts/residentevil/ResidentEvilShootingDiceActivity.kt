@@ -1,4 +1,4 @@
-package na.mytutorials.dicetuts
+package na.mytutorials.dicetuts.residentevil
 
 import android.content.Context
 import android.content.Intent

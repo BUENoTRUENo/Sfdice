@@ -51,14 +51,15 @@
         android:id="@+id/selectortext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/med_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
         android:text="Select Game"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="italic"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/top_guide"
+       />
 
     <Switch
         android:id="@+id/select_game_type_switch"

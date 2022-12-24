@@ -14,21 +14,21 @@
         android:theme="@style/Theme.DICE"
         tools:targetApi="31">
         <activity
-            android:name=".ResidentEvilEnterRoomActivity"
+            android:name=".residentevil.ResidentEvilEnterRoomActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResidentEvilDodgeMenuActivity"
+            android:name=".residentevil.ResidentEvilDodgeMenuActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResidentEvilShootingDiceActivity"
+            android:name=".residentevil.ResidentEvilShootingDiceActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ResidentEvilMenuActivity"
+            android:name=".residentevil.ResidentEvilMenuActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -55,7 +55,7 @@
             android:exported="true"
             android:label="@string/app_name" />
         <activity
-            android:name=".StreetFighterMenuActivity"
+            android:name=".streetfighter.StreetFighterMenuActivity"
             android:exported="false" />
         <activity
             android:name=".DiceActivity"

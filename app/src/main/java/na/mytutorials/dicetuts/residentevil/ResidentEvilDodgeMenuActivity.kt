@@ -1,4 +1,4 @@
-package na.mytutorials.dicetuts
+package na.mytutorials.dicetuts.residentevil
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,7 @@ class ResidentEvilDodgeMenuActivity : AppCompatActivity() {
 
     companion object {
         fun startResidentEvilDodgeMenuActivity(context: Context) {
-            val intent = Intent(context,ResidentEvilDodgeMenuActivity::class.java)
+            val intent = Intent(context, ResidentEvilDodgeMenuActivity::class.java)
             context.startActivity(intent)
         }
     }

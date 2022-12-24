@@ -1,4 +1,4 @@
-package na.mytutorials.dicetuts
+package na.mytutorials.dicetuts.streetfighter
 
 import android.content.Context
 import android.content.Intent
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
-import android.widget.EditText
 import androidx.core.widget.addTextChangedListener
+import na.mytutorials.dicetuts.DiceActivity
 import na.mytutorials.dicetuts.databinding.ActivityStreetFighterMenuBinding
 
 class StreetFighterMenuActivity : AppCompatActivity() {
